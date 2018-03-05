@@ -136,6 +136,8 @@ id,name,startdate,enddate,active,campaignid
 ## Database
 For this project I chose to use SQL database with the following schema:  
 ![Schema](/pic/schema.PNG)  
+This database design seemed suitable for this task because we can make new instance of it for every customer we have. It is also possible to have, for example, five instances and in each stored data for 25% of our customers. With that we can achieve faster response times and lower loads using multiple API instances and databases.  
+
 Some fake data for every table.  
 Customer table:  
 ![Customer](/pic/customer.PNG)  
