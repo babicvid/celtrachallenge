@@ -137,7 +137,7 @@ id,name,startdate,enddate,active,campaignid
 ## Database
 For this project I chose to use SQL database with the following schema:  
 ![Schema](/pic/schema.PNG)  
-This database design seemed suitable for this task because we can make new instance of it for every customer we have. It is also possible to have, for example, five instances and in each stored data for 25% of our customers. With that we can achieve faster response times and lower loads using multiple API instances and databases.  
+This database design seemed suitable for this task because we can make new instance of it for every customer we have. It is also possible to have, for example, five instances and in each stored data for 20% of our customers. With that we can achieve faster response times and lower loads using multiple API instances and databases.  
 
 Some fake data for every table.  
 Customer table:  
@@ -151,8 +151,6 @@ Impression table:
   
 You can also go to **[phpMyAdmin](http://www.phpmyadmin.co/index.php)** to see all the details regarding this database.  
 ```
-Server: sql11.freemysqlhosting.net
-Username: sql11224596
-Password: uk9tTAEbRl
+server address, username and password sent by mail
 ```  
 There is also a backup .sql file in the project folder. 
