@@ -31,7 +31,8 @@ campaign,ad,swipes,clicks
 12,1201,10,8
 12,1202,1,9
 12,1203,1,0
-
+```
+```
 example 2:
 http://127.0.0.1:5002/single-all/12/impressions,interactions,clicks,swipes,pinches,touches,uniqueusers/
 
@@ -40,7 +41,8 @@ campaign,ad,impressions,interactions,swipes,pinches,touches,clicks,uniqueusers
 12,1201,3,21,10,1,2,8,3
 12,1202,8,14,1,4,0,9,6
 12,1203,1,8,1,2,5,0,1
-
+```
+```
 example 3:
 http://127.0.0.1:5002/single-all/abcdefg64694654564/swipes,clicks/
 
@@ -72,7 +74,8 @@ campaign,ad,date,impressions,pinches,clicks
 12,1202,2018-02-28,3,0,3
 12,1202,2018-03-02,1,2,1
 12,1203,2018-03-01,1,2,0
-
+```
+```
 example 2:
 http://127.0.0.1:5002/all-week/impressions,interactions,clicks,swipes,pinches,touches,uniqueusers/
 
@@ -94,7 +97,7 @@ campaign,ad,date,impressions,interactions,swipes,pinches,touches,clicks,uniqueus
 Three methods, each returning information regarding specific Customer, Campaign or Ad.  
 Request format:  
 ```
-*url*/*customer,campaign or ad*-all/*id*/
+*url*/*customer,campaign or ad*-info/*id*/
 ```
 
 Examples:
@@ -105,20 +108,23 @@ http://127.0.0.1:5002/customer-info/1/
 returns:
 id,name,address
 1,Spar,Jamova 105
-
+```
+```
 example 2:
 http://127.0.0.1:5002/customer-info/5/
 
 returns:
 {"message": "No data, check ID"}
-
+```
+```
 example 3:
 http://127.0.0.1:5002/campaign-info/11/
 
 returns:
 id,description,startdate,enddate,active,customerid
 11,Fall2017,2017-09-01,2018-01-03,0,1
-
+```
+```
 example 4:
 http://127.0.0.1:5002/ad-info/1102/
 
