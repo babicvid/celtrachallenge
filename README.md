@@ -1,3 +1,4 @@
+# Celtra Data Engineer Challenge
 ## API
 I decided to use Python with Flask for RESTful API and PyMySQL for connection with the database.  
 When a request comes, script connects to a free online SQL server, excecutes the queries and returns a response in CSV format.
